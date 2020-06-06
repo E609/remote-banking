@@ -21,7 +21,7 @@ export function Content() {
             setShowTime(e.target.checked);
     }
     const onChangeType = e => {
-        if (!(showTime || showDate || showIncome || showSpending)) setShowTime(true);
+        if (!(showTime || showDate || showIncome || showSpending)) setShowType(true);
         else
             setShowType(e.target.checked);
     }
