@@ -1,0 +1,93 @@
+.App {
+  margin:1px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 10vh 1fr 10vh;
+}
+
+.App-header, .App-footer {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: black;
+  border: 1px solid black;
+}
+.App-header{
+  font-size: 12px;
+  display: grid;
+  grid-template-columns:30vh 60vh;
+}
+.App-header>p{
+  text-align: left;
+}
+.App-header div{
+  padding-right: 3vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.App-header div>img{
+  padding-right: 1vh;
+}
+.App-header a{
+  text-decoration: none;
+  color:black;
+  font-size: 16pt;
+  font-weight: 500;
+}
+.App-content{
+  border: 1px solid black;
+}
+.Config-block{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  margin:3vh;
+  border: 2px solid black;
+}
+.Config-block div{
+  font-size: 15pt;
+  margin: 1vh;
+  text-align: center;
+}
+.Grouping-block{
+  text-align: left;
+  margin-left: 3vh;
+  font-size: 15pt;
+}
+.Grouping-block select{
+  margin-left: 2vh;
+  font-size: 14pt;
+  background: #f3f3f3;
+}
+
+.Content-Data{
+  display: block;
+  margin: 3vh;
+  border: 1px solid black;
+  max-height: 55vh;
+  overflow-y: scroll;
+}
+.Content-Data > table{
+  width:99%;
+  margin: 1vh;
+  white-space: nowrap;
+  border-collapse: collapse;
+  border: 1px solid lightgray;
+}
+.Content-Data>table>thead>tr>td{
+  background: rgb(217,217,217);
+}
+.Content-Data>table td,th{
+  border: 1px solid darkgray;
+}
+.Income{
+  color:green;
+}
+.Spending{
+  color:red;
+}
+.App-footer{
+  font-size: 14pt;
+}
