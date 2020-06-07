@@ -47,10 +47,39 @@
   border: 2px solid black;
 }
 .Config-block div{
-  font-size: 15pt;
   margin: 1vh;
   text-align: center;
 }
+.Config-block input[type=checkbox]{
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height:1px;
+  width:1px;
+  margin:-1px;
+  padding:0;
+  border:0;
+}
+.Config-block input[type=checkbox] + label{
+  padding-left:20px;
+  height:15px;
+  display:inline-block;
+  line-height:15px;
+  background-repeat:no-repeat;
+  background-position: 0 0;
+  font-size:18px;
+  vertical-align:middle;
+  cursor:pointer;
+  font-weight: 500;
+  background-position: 10 -15px;
+  background-image:url("/lite-x-gray.png");  margin:1vh;
+
+}
+.Config-block input[type=checkbox]:checked + label {
+  background-position: 0 -15px;
+  background-image:url("/lite-x-gray.png");
+}
+
 .Grouping-block{
   text-align: left;
   margin-left: 3vh;
@@ -69,6 +98,20 @@
   max-height: 55vh;
   overflow-y: scroll;
 }
+
+/* ползунок скроллбара */
+::-webkit-scrollbar {
+  width:2vh;
+}
+::-webkit-scrollbar-track {
+  border: 1px solid black;
+}
+::-webkit-scrollbar-thumb {
+  border: 1px solid black;
+  background-color: #d9d9d9;
+  outline: 1px solid slategrey;
+}
+
 .Content-Data > table{
   width:99%;
   margin: 1vh;
@@ -78,6 +121,7 @@
 }
 .Content-Data>table>thead>tr>td{
   background: rgb(217,217,217);
+  font-weight: 500;
 }
 .Content-Data>table td,th{
   border: 1px solid darkgray;
@@ -85,9 +129,10 @@
 .Income{
   color:green;
 }
-.Spending{
+.Outcome{
   color:red;
 }
 .App-footer{
   font-size: 14pt;
 }
+
