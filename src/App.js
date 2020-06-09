@@ -5,13 +5,13 @@ import {Footer} from './components/footer/Footer';
 import {Content} from './components/content/Content';
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Content/>
-      <Footer/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header/>
+            <Content/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
